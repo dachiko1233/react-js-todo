@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import TodoInout from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import Novexs from "./Novexs";
 
 export default function App() {
   const [todos, setTodos] = useState([]);
@@ -56,6 +57,7 @@ export default function App() {
         handleDeleteTodo={handleDeleteTodo}
         todos={todos}
       />
+      <Novexs />
     </>
   );
 }
